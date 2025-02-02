@@ -36,7 +36,7 @@ Slime s;
 
 void Battle()
 {
-    s.hp = 80; //얘도 그렇고 캐릭도 부활을 해야하네
+    s.hp = 80;
     while (s.hp > 0 || m.hp <= 0 || w.hp <= 0)
     {   
         if (select == 1)
@@ -79,10 +79,10 @@ void Battle()
             switch (input)
             {
             case 1:
-                s.hp = s.hp - w.atk;
+                s.hp = s.hp - m.atk;
                 break;
             case 2:
-                w.hp = w.hp - s.atk;
+                m.hp = m.hp - s.atk;
                 break;
             default:
                 std::cout << "잘못된 입력입니다\n";
@@ -152,6 +152,7 @@ void BattleField()
 
 void Town()
 {
+    m.hp = 60, w.hp = 100;
     //여기서 게임 종료를 어떻게 구현해야 할 지 모르겠음
     std::cout << "마을입니다\n";
     std::cout << "1. 사냥한다\n";
