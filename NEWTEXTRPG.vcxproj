@@ -127,7 +127,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="GameFunctions.cpp" />
+    <ClCompile Include="Goblin.cpp" />
+    <ClCompile Include="Magician.cpp" />
+    <ClCompile Include="Monster.cpp" />
     <ClCompile Include="NEWTEXTRPG.cpp" />
+    <ClCompile Include="Slime.cpp" />
+    <ClCompile Include="Warrior.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="GameFunctions.h" />
+    <ClInclude Include="Goblin.h" />
+    <ClInclude Include="Magician.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="Slime.h" />
+    <ClInclude Include="Warrior.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
